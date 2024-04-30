@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from models import setup_db, Actor, Movie,actors_movies, add_actor_to_movie
 from auth.auth import requires_auth, AuthError
-
+# trigger
 def create_app(database_path= None):
   # create and configure the app
     app = Flask(__name__)

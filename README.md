@@ -70,7 +70,13 @@ python test_app.py
 You need to setup an Auth0 account.
 
 
-
+### .env Setup
+your .env needs to have the following values:
+DATABASE_URL=
+DATABASE_USER=
+DATABASE_PASSWORD =
+ASSISTANT_TOKEN = 
+PRODUCER_TOKEN = 
 ##### Roles
 
 Create three roles for users under `Users & Roles` section in Auth0

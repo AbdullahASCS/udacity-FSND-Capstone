@@ -66,10 +66,10 @@ python test_app.py
 ```
 
 #### Auth0 Setup
-```
+
 You need to setup an Auth0 account.
 
-```
+
 
 ##### Roles
 
@@ -169,7 +169,7 @@ The API will return three error types when requests fail:
 * **Example Request:** curl http://localhost:5000/movies/1
 
 * **Expected Result:**
-    ```json
+    ``` json
 {
     "associated_actors": [],
     "movie": {
@@ -179,7 +179,8 @@ The API will return three error types when requests fail:
     },
     "success": true
 }
-```
+  ```
+
 #### GET /actors/id
 * Get an actor
 
@@ -189,7 +190,7 @@ The API will return three error types when requests fail:
 
 * **Expected Result:**
     ```json
-	{
+{
     "actor": {
         "age": 30,
         "gender": "Male",
@@ -199,7 +200,7 @@ The API will return three error types when requests fail:
     "associated_movies": [],
     "success": true
 }
-	```
+  ```
 	
 #### POST /movies
 * Creates a new movie.
@@ -258,9 +259,10 @@ The API will return three error types when requests fail:
     curl --location --request PATCH 'http://localhost:5000/movies/1' \
 		--header 'Content-Type: application/json' \
 		--data-raw '{
-			"title": "Eyvah eyvah 2"
+			"title": "test"
         }`
-  ```
+  
+    ```
   
 * **Example Response:**
     ```json

@@ -106,15 +106,7 @@ def create_app(database_path= None):
         }), 422
     
     
-    '''
-    @TODO implement error handlers using the @app.errorhandler(error) decorator each error handler should return (with approprate messages):
-                 jsonify({
-                        "success": False,
-                        "error": 404,
-                        "message": "resource not found"
-                        }), 404
-    
-    '''
+
     @app.errorhandler(404)
     def not_found(error):
         return jsonify({
@@ -124,10 +116,7 @@ def create_app(database_path= None):
         }), 404
     
     
-    '''
-    @TODO implement error handler for 404
-        error handler should conform to general task above
-    '''
+
     @app.errorhandler(400)
     def bad_request(error):
         return jsonify({
@@ -146,10 +135,7 @@ def create_app(database_path= None):
     
     
     
-    '''
-    @TODO implement error handler for AuthError
-        error handler should conform to general task above
-    '''
+
     @app.errorhandler(AuthError)
     def auth_error(error):
         return jsonify({
@@ -160,7 +146,7 @@ def create_app(database_path= None):
 
     return app
    
-app = create_app()
+app = create_app(database_path=None)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

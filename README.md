@@ -30,6 +30,21 @@ The project adheres to the PEP 8 style guide and follows common best practices, 
 
 - [render](https://www.render.com) is the cloud platform used for deployment
 
+### Deploying the app on render
+
+##### Steps:
+
+1. Make an account on [Render](https://render.com/)
+2. Create a postgresSQL database in your render account. You can choose the free tier plan 
+3. Fork the repo, then create a webservice and choose build from github repo
+4. Go to the environment section and add the .env variables you configured (including the details of the render postgressql creds)
+5. Make sure to set the env variable PYTHON_VERSION to 3.7.1 otherwise the build will fail
+6. Wait for the build to finish
+7. Test the URL that was assigned to your webservice, it should end with *onrender.com*
+8. Connect to the render postgres database and run setup.psql
+9. Verify the app's behavior by testing the API endpoints described below
+10. Congratulations!
+
 
 ### Running Locally
 
@@ -100,7 +115,7 @@ Create two roles for users under `Users & Roles` section in Auth0
 Following permissions should be created under created API settings.
 
 * `get:actors`
-* `get:movies``
+* `get:movies`
 * `patch:movies`
 * `post:movies`
 * `delete:movies`

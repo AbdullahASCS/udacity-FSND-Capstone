@@ -1,9 +1,9 @@
 # Casting Agency Project
 Udacity Full-Stack Web Developer Nanodegree Program Capstone Project
 
-## Project Motivation
 The Casting Agency Project models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process. 
-
+## Project Motivation
+I developed this project to apply all the skils that i have learned in the FSND nanodegree program.
 ## Getting Started
 
 The project adheres to the PEP 8 style guide and follows common best practices, including:
@@ -77,10 +77,15 @@ your .env needs to have the following values:
 * DATABASE_USER=,
 * DATABASE_PASSWORD =
 * ASSISTANT_TOKEN = 
-* PRODUCER_TOKEN = 
+* PRODUCER_TOKEN =
+* AUTH0_DOMAIN =  
+* ALGORITHMS = 
+* API_AUDIENCE = 
+
+ you can set up these enviroment variables by configuring and running them in setup.sh
 ##### Roles
 
-Create three roles for users under `Users & Roles` section in Auth0
+Create two roles for users under `Users & Roles` section in Auth0
 
 * Casting Assistant
 	* Can view actors and movies
@@ -176,7 +181,8 @@ The API will return three error types when requests fail:
 * **Example Request:** curl http://localhost:5000/movies/1
 
 * **Expected Result:**
-    ``` json
+
+``` json
 {
     "associated_actors": [],
     "movie": {
@@ -196,7 +202,7 @@ The API will return three error types when requests fail:
 * **Example Request:** curl http://localhost:5000/actors/1
 
 * **Expected Result:**
-    ```json
+ ``` json
 {
     "actor": {
         "age": 30,
@@ -207,7 +213,7 @@ The API will return three error types when requests fail:
     "associated_movies": [],
     "success": true
 }
-  ```
+ ```
 	
 #### POST /movies
 * Creates a new movie.
@@ -224,10 +230,9 @@ The API will return three error types when requests fail:
 			"title": "test",
 			"release_date": "19-02-2020"
 		}'
-    ```
-    
+    ``` 
 * **Example Response:**
-    ``` json
+ ``` json
 {
     "movie": {
         "id": 11,
@@ -236,7 +241,8 @@ The API will return three error types when requests fail:
     },
     "success": true
 }
-    ```
+
+```
 #### DELETE /movies/id
 * Deletes the movie with given id 
 
@@ -271,8 +277,8 @@ The API will return three error types when requests fail:
   
     ```
   
-* **Example Response:**
-    ```json
+*   **Example Response:**
+   ```json
 {
     "associated_actors": [],
     "movie": {

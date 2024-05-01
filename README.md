@@ -1,7 +1,9 @@
 # Casting Agency Project
 Udacity Full-Stack Web Developer Nanodegree Program Capstone Project
 
-The Casting Agency Project models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process. 
+The Casting Agency Project models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
+
+This project serves as a dedicated environment for honing and demonstrating various web development skills. These encompass aspects such as data modeling, API design, authentication, authorization, and cloud deployment.
 ## Project Motivation
 I developed this project to apply all the skils that i have learned in the FSND nanodegree program.
 ## APP URL

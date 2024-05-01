@@ -81,7 +81,8 @@ your .env needs to have the following values:
 * AUTH0_DOMAIN =  
 * ALGORITHMS = 
 * API_AUDIENCE = 
-you can set up these enviroment variables by configuring and running them in setup.sh
+
+ you can set up these enviroment variables by configuring and running them in setup.sh
 ##### Roles
 
 Create two roles for users under `Users & Roles` section in Auth0
